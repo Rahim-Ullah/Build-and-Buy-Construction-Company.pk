@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services Page</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="icon" href="tinywow_logo_31751107(1).png" />
+  <link rel="stylesheet" href="construction.css" />
+
+  <style>
+    .recent-projects {
+      padding: 8rem 1rem 1rem 1rem;
+    }
+
+    .featured-projects {
+      box-sizing: border-box;
+      padding: 4rem 1rem 1rem 1rem;
+    }
+
+    .featured-projects-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: .5rem;
+      grid-column: goldenrod;
+    }
+
+    button {
+      border: 1px solid goldenrod;
+      border-radius: 5px;
+    }
+
+    #featured-divs {
+      border-right: 2px solid goldenrod;
+      box-shadow: 5px 0px 5px rgba(128, 128, 128, 0.5);
+      box-sizing: border-box;
+      padding: .5rem;
+    }
+
+    #footer-div-last {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: .5rem;
+      /* background-color: aqua; */
+    }
+
+    #footer-div-last img {
+      box-shadow: 4px 4px 2px rgba(128, 128, 128, 0.349);
+    }
+
+    .footer .btn:hover {
+      color: aliceblue;
+    }
+
+    .recently-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+      padding: 1rem 4rem;
+    }
+
+
+    @media screen and (max-width: 992px) {
+      .footer {
+        grid-template-columns: 1fr 1fr;
+      }
+      .recently-images{
+        grid-template-columns: 1fr 1fr;
+      }
+      .featured-projects-images{
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      .footer {
+        grid-template-columns: 1fr;
+      }
+      .recently-images{
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+      }
+      .featured-projects-images{
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .footer {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+      .recently-images{
+        grid-template-columns: 1fr;
+      }
+      .featured-projects-images{
+        grid-template-columns: 1fr ;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+    <div class="container-fluid nav-bar-bar">
+      <a class="navbar-brand image-link" href="#"><img src="tinywow_logo_31751107(1).png" alt="brand logo"
+          class="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Select
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Your Role</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Environment Safety</a>
+              </li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="#">Natural Beauty</a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+        </ul>
+        <form class="d-flex gap-0 ps-4">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="recent-projects">
+    <h1 class="fw-bolder text-center">Recently Done Projects <span>!</span></h1>
+    <div class="recently-images">
+      <!-- <div class="row row-cols-1 row-cols-md-3 g-4"> -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 1 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="77.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 4 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="11.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="22.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 6 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="88.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 7 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="44.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 8 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <div class="featured-projects">
+    <h1 class="fw-bolder text-center">Featured Projects<span>!</span></h1>
+    <div class="featured-projects-images">
+      <div class="first-image" id="featured-divs">
+        <img src="00.jpg" alt="">
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum impedit harum laudantium non consequatur,
+          sapiente at quasi atque magni illum?</p>
+        <button>Read More ></button>
+      </div>
+      <div class="second-image" id="featured-divs">
+        <img src="5.jpg" alt="">
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum impedit harum laudantium non consequatur,
+          sapiente at quasi atque magni illum?</p>
+        <button>Read More ></button>
+      </div>
+      <div class="third-image" id="featured-divs">
+        <img src="9.jpg" alt="">
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum impedit harum laudantium non consequatur,
+          sapiente at quasi atque magni illum?</p>
+        <button>Read More ></button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="footer">
+    <div class="footer-first">
+      <div class="card" style="width: 100%;">
+        <!-- <img src="44.jpg" class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">TOP RATED SERVICE</h5>
+          <p class="card-text fw-lighter">Some quick example text to build on the card title and make up the bulk of the
+            card's content.</p>
+          <img src="4.jpg" alt="" class="mb-3">
+          <p href="#" class="btn btn">Read More -></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-second">
+      <h4 class="fw-bolder">Contact Us</h4>
+      <div class="team-links" id="footer-div">
+        <a href="#" class="text-decoration-none">Lorem, ipsum. lorem</a>
+        <a href="#" class="text-decoration-none">Lorem, ipsum. lo</a>
+        <a href="#" class="text-decoration-none">Lorem, ipsum. ipsum</a>
+        <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+        <a href="#" class="text-decoration-none">Lorem, ipsum.lorem</a>
+      </div>
+    </div>
+    <div class="footer-third">
+      <h4 class="fw-bolder">Work Time Images</h4>
+      <div class="team-links" id="footer-div-last">
+        <img src="22.jpg" alt="">
+        <img src="2.jpg" alt="">
+        <img src="00.jpg" alt="">
+        <img src="77.jpg" alt="">
+        <!-- <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a> -->
+      </div>
+    </div>
+  </div>
+  <div class="footer-2">
+    <h5 class="text-light fs-6">copy right &copy; 2023 <span class="fw-bolder">BUILD&BUY</span> all rights reserved</h5>
+  </div>
+
+
+  <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

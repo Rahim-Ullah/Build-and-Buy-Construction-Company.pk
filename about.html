@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="icon" href="tinywow_logo_31751107(1).png" />
+    <link rel="stylesheet" href="construction.css" />
+    <style>
+        .about-home {
+            color: aliceblue;
+            box-sizing: border-box;
+            padding: 10rem 25rem 6rem 6rem;
+            background-image: url('13.jpg'), linear-gradient(to right, rgba(0, 0, 0, 0.945) 50%, #174072b6);
+            background-blend-mode: multiply;
+            background-size: cover;
+        }
+
+        .footer {
+            background-color: goldenrod;
+            padding: 2rem 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 4rem;
+        }
+
+        /* .footer-first{
+    height: 10rem;
+} */
+        .footer .btn:hover {
+            color: aliceblue;
+        }
+
+        .link-footer-2 {
+            height: 90%;
+        }
+
+        /* responsive */
+        @media screen and (max-width: 992px) {
+            .about-home{
+                padding-bottom: 10rem 1rem 1rem 1rem;
+                box-sizing: border-box;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .about-home{
+                padding-bottom: 10rem 1rem 1rem 1rem;
+                box-sizing: border-box;
+            }
+
+            .footer{
+                grid-template-columns: 1fr 1fr;
+            }
+            .card{
+                width: 100%;
+            }
+
+            /* .card-group{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+        } */
+        }
+        @media screen and (max-width: 480px) {
+            /* .about-home{
+                padding-bottom: 10rem 1rem 1rem 1rem;
+                box-sizing: border-box;
+            } */
+            .footer{
+                grid-template-columns: 1fr;
+            }
+            .about-home{
+                padding: 10rem 1rem 1rem 1rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+        <div class="container-fluid nav-bar-bar">
+            <a class="navbar-brand image-link" href="#"><img src="tinywow_logo_31751107(1).png" alt="brand logo"
+                    class="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Select
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Your Role</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Environment Safety</a>
+                            </li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Natural Beauty</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+                </ul>
+                <form class="d-flex gap-0 ps-4">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="about-home">
+        <h1 class="fw-bolder">WELCOME TO BUILD AND BUY</h1>
+        <h1 class="fw-bolder"><span>Let's Know something about BUIL AND BUY!</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nisi incidunt ratione, nesciunt rem
+            repellendus quos? Ea et tempora dolor tenetur aliquam adipisci atque eveniet soluta iure alias. Dolorum
+            nobis, officiis similique, rerum ratione est repellat nulla sed, explicabo aut odio id ex consequatur
+            dignissimos. Ab vero temporibus inventore fugiat.</p>
+        <button>READ MORE -></button>
+    </div>
+
+    <div class="about-more p-4">
+        <h1 class="text-center fw-bolder">What WE do?</h1>
+        <p class="px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti aliquid repudiandae dolores
+            quidem deleniti reprehenderit quibusdam voluptatem <br> illum id distinctio, unde ex praesentium error
+            repellat eius assumenda temporibus voluptas omnis odio numquam maiores harum? Molestias exercitationem
+            aspernatur hic dolores,<br><br> rem voluptatibus vitae consequatur quibusdam possimus repudiandae impedit
+            harum deleniti dolor ut aliquam? Sunt quis dicta maiores quibusdam. Eum, rem laboriosam nobis ipsum, aliquid
+            vel <br> tempora tempore, nam cumque quod corporis molestias consectetur recusandae! Sunt nam hic velit <br>
+            nulla illo ipsam omnis rem deserunt delectus id non, reiciendis impedit! In quos accusantium eveniet facere
+            aperiam laborum ab dignissimos itaque natus tenetur.</p>
+    </div>
+    <div class="about-projects p-4">
+        <h1 class="text-center fw-bolder">Some Projects <span>!!</span></h1>
+        <p class="px-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti aliquid repudiandae dolores
+            quidem deleniti reprehenderit quibusdam voluptatem <br> illum id distinctio, unde ex praesentium error
+            repellat eius assumenda temporibus voluptas omnis odio numquam maiores ab dignissimos itaque natus tenetur.
+        </p>
+        <div class="projects-images flex-md-wrap">
+            <div class="card-group d-flex gap-2 flex-wrap flex-md-wrap p-4">
+                <div class="card">
+                    <img src="9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</h6>
+                        <h6 class="card-text"><small class="text-muted">Last updated 3 mins ago</small></h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="99.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</h6>
+                        <h6 class="card-text"><small class="text-muted">Last updated 3 mins ago</small></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-first">
+            <div class="card" style="width: 100%;">
+                <!-- <img src="44.jpg" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">About Company</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p href="#" class="btn btn">Read More -></p>
+                </div>
+            </div>
+            <!-- <h4 class="fw-bolder">About company</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa cum non, maxime aperiam commodi earum magnam dolorum sit, ducimus reiciendis fugiat voluptatem odio est placeat omnis reprehenderit necessitatibus doloribus officiis cumque nobis ex, blanditiis debitis enim! Illo, dolore? Culpa, odio natus rem non ratione amet quos id impedit! Nam est hic impedit mollitia earum, temporibus, recusandae cumque sedi</p>
+            <button class="button">READ MORE -></button> -->
+            <!-- <div class="team-links" id="footer-div">
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+            </div> -->
+        </div>
+        <div class="footer-second">
+            <h4 class="fw-bolder">Quick Links</h4>
+            <div class="team-links" id="footer-div">
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+            </div>
+        </div>
+        <div class="footer-third">
+            <h4 class="fw-bolder">Contact Links</h4>
+            <div class="team-links" id="footer-div">
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+            </div>
+        </div>
+        <!-- <div class="footer-third">
+            <h4 class="fw-bolder">Live Map</h4>
+                <div class="link-footer-2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451.3583269656639!2d69.59514430721254!3d31.325738486196258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392ed5dddd47183d%3A0x674c401d39cdd7f!2sZhob%20Diamond%20Restaurant!5e0!3m2!1sen!2s!4v1692173741795!5m2!1sen!2s" width="100%" height="100%" style="border:2, black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        </div> -->
+    </div>
+    <div class="footer-2">
+        <h5 class="text-light fs-6">copy right &copy; 2023 <span class="fw-bolder">BUILD&BUY</span> all rights reserved
+        </h5>
+    </div>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

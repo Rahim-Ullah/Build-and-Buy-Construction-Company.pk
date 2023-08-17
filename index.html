@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construction</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="icon" href="tinywow_logo_31751107(1).png" />
+    <link rel="stylesheet" href="construction.css" />
+
+    <style>
+        @media screen and (max-width: 992px) {
+            .work{
+                margin: 0% auto;
+                margin-bottom: 1rem;
+                width: 70%;
+                display: grid;
+                grid-template-columns: 1fr;
+                box-shadow: 1px 1px 5px goldenrod;
+            }
+
+            .footer{
+                grid-template-columns: 1fr 1fr;
+            }
+
+            form{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .work{
+                margin: 0% auto;
+                margin-bottom: 1rem;
+                width: 90%;
+                display: grid;
+                grid-template-columns: 1fr;
+                box-shadow: 1px 1px 5px goldenrod;
+            }
+
+            .footer{
+                grid-template-columns: 1fr 1fr;
+            }
+
+            form{
+                width: 90%;
+            }
+
+            .services-items{
+                grid-template-columns: 1fr 1fr;
+                padding: 1rem 2rem;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .home{
+                padding: 10rem 1rem 1rem 1rem;
+            }
+            .home .h1{
+                font-size: 2rem;
+                
+            }
+            button{
+                margin: .5rem;
+            }
+            .work{
+                margin: 0% auto;
+                margin-bottom: 1rem;
+                width: 95%;
+                height: fit-content;
+                display: grid;
+                grid-gap: 4rem;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                box-shadow: 1px 1px 5px goldenrod;
+                padding: 2rem 0;
+            }
+
+            .footer{
+                grid-template-columns: 1fr;
+            }
+
+            form{
+                width: 90%;
+            }
+
+            .services-items{
+                grid-template-columns: 1fr;
+                /* grid-gap: 2rem; */
+                padding: 1rem 2rem;
+            }
+
+            .card-img{
+                visibility: hidden;
+                height: fit-content;
+                padding: 2rem;
+            }
+
+            form{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: .5rem;
+            }
+            .news{
+                padding: 1rem 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+        <div class="container-fluid nav-bar-bar">
+            <a class="navbar-brand image-link" href="#"><img src="tinywow_logo_31751107(1).png" alt="brand logo"
+                    class="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Select
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Your Role</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Environment Safety</a>
+                            </li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Natural Beauty</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+                </ul>
+                <form class="d-flex gap-0 ps-4">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home">
+        <h4 class=""><span>Circle got smaller ________</span></h4>
+        <h1 class="fw-bolder h1"><span>Vision got Larger</span></h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla
+            iste quo laborum expedita! Sint obcaecati corrupti ab nostrum amet.
+        </p>
+        <div class="buttons">
+            <button>OUR SERVICES -></button>
+            <button>CONTACT US -></button>
+        </div>
+    </div>
+
+    <div class="services pt-5" id="services">
+        <h1 class="fw-bolder text-center"><span>OUR FEATURES</span></h1>
+        <div class="services-items">
+            <div class="card mb-3">
+                <img src="9.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                    <p class="card-text">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated will be here</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="11.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                    <p class="card-text">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated will be here</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="12.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                    <p class="card-text">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated will be here</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                    <p class="card-text">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated will be here</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="00.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                    <p class="card-text">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated will be here</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                    <p class="card-text">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated will be here</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="work bg-dark">
+        <div class="card bg-dark text-white">
+            <img src="5.jpg" class="card-img" alt="..." style="filter: hue-rotate(100%); opacity: .2;">
+            <div class="card-img-overlay p-4">
+                <h4 class=""><span>SUSTAINABILITY</span></h4>
+                <h1 class="card-title fw-bolder">Committed to keep people <span>HEALTHY & SAFE</span></h1>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+                <button>OUR SERVICES -></button>
+            </div>
+        </div>
+        <div class="card bg-dark text-white">
+            <img src="4.jpg" class="card-img" alt="..." style="filter: contrast(35%); ;">
+            <div class="card-img-overlay p-2">
+                <h1 class="card-title fw-bolder">WE ARE BEST IN THE FIELD</h1>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <div class="grid-field">
+                    <div class="grid-field-first d-flex justify-content-center align-items-center p-2">
+                        <div class="img"></div>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    <div class="grid-field-second d-flex justify-content-center align-items-center p-2">
+                        <div class="img"></div>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    <div class="grid-field-third d-flex justify-content-center align-items-center p-2">
+                        <div class="img"></div>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    <div class="grid-field-fourth d-flex justify-content-center align-items-center p-2">
+                        <div class="img"></div>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                </div>
+                <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="news">
+        <h1 class="fw-bolder">SUBSCRIBE TO OUR NEWS LETTERS<span>!!</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellat officia ad nam facilis sint
+            consequatur harum. Harum, ea. Non dignissimos natus, et reiciendis eveniet eum deserunt perspiciatis
+            doloremque aut molestiae cumque optio, aperiam reprehenderit harum voluptatum soluta. Molestiae quis
+            suscipit consequuntur quos ut voluptatibus natus fuga laudantium repellendus inventore.</p>
+
+        <form action="" class="mt-0 mx-auto">
+            <div class="form-floating mb-3">
+                <input type="name" class="form-control" id="floatingInput" placeholder="name">
+                <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Gmail as name@example.com"
+                    required>
+                <label for="floatingInput">Gmail</label>
+            </div>
+            <div class="form-floating" required>
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+            </div>
+            <input type="button" class="btn w-50" value="SUBSCRIBE">
+            <!-- <input type="text" placeholder="Name">
+            <input type="email" placeholder="Gmail"> -->
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="footer-first">
+            <h4 class="fw-bolder">About Team</h4>
+            <div class="team-links" id="footer-div">
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+            </div>
+        </div>
+        <div class="footer-second">
+            <h4 class="fw-bolder">Quick Links</h4>
+            <div class="team-links" id="footer-div">
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+                <a href="#" class="text-decoration-none">Lorem, ipsum.</a>
+            </div>
+        </div>
+        <div class="footer-third">
+            <h4 class="fw-bolder">Live Map</h4>
+            <div class="team-links" id="footer-div">
+                <div class="link-footer-2">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451.3583269656639!2d69.59514430721254!3d31.325738486196258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392ed5dddd47183d%3A0x674c401d39cdd7f!2sZhob%20Diamond%20Restaurant!5e0!3m2!1sen!2s!4v1692173741795!5m2!1sen!2s"
+                        width="100%" height="250" style="border:2, black;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-2">
+        <h5 class="text-light fs-6">copy right &copy; 2023 <span class="fw-bolder">BUILD&BUY</span> all rights reserved
+        </h5>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

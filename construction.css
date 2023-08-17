@@ -1,0 +1,212 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::selection{
+    color: #174072;
+    background-color: goldenrod;
+}
+a{
+    position: relative;
+    color: #174072;
+}
+a:hover{
+    transition: all .4s ease 0s;
+    color: #174072c4;
+}
+a::before{
+    content: '';
+    position: absolute;
+    left: .6rem;
+    bottom: 0%;
+    width: 0%;
+    height: 3px;
+    background-color: #174072;
+}
+a:hover::before{
+    position: absolute;
+    left: .6rem;
+    bottom: 0%;
+    width: 80%;
+    height: 3px;
+    transition: all .4s ease 0s;
+}
+.btn{
+    color: #174072;
+    border-color: #174072;
+}
+.btn:hover{
+    transition: all .4s ease 0s;
+    background-color: #174072;
+    color: #ffffff;
+    border-color: #174072;
+}
+button{
+    color: goldenrod;
+    border-color: goldenrod;
+    padding: .7rem 1.5rem;
+    background-color: transparent;
+    width: fit-content;
+}
+button:hover{
+    transition: all .4s ease 0s;
+    background-color: goldenrod;
+    color: #ffffff;
+    border-color: goldenrod;
+}
+h1{
+    color: #174072;
+}
+h4 span{
+    color: #174072;
+}
+img{
+    width: 100%;
+}
+span{
+    color: goldenrod;
+}
+
+.nav-bar-bar{
+    background-color: goldenrod;
+}
+.image-link{
+    width: fit-content;
+}
+.image-link img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all .4s ease 0s;
+}
+.image-link img:hover{
+    filter: invert(100%);
+    transition: all .4s ease 0s;
+    background-color: transparent;
+    box-shadow: 1px 1px 100px #a2bafa;
+}
+ul{
+    gap: 1rem;
+}
+
+.home{
+    background-image: url('pexels-sophie-dale-5043903.jpg'), linear-gradient(to bottom, rgb(0, 0, 0), #174072);
+    background-blend-mode: multiply;
+    background-size: cover;
+    /* background-color: #a2bafa; */
+    padding: 10rem 25% 6rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #ffffff;
+}
+.home h1{
+    font-size: 4rem;
+}
+.buttons{
+    padding: .5rem;
+}
+
+.services-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 6rem;
+    grid-gap: .5rem;
+}
+.services h1{
+    color: #174072;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0rem;
+    grid-gap: .5rem;
+    height: fit-content;
+}
+
+.grid-field{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.img{
+    background-color: #e7c816;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card:first-child h1{
+    color: goldenrod;
+    font-weight: bold;
+}
+.card:first-child p{
+    color: goldenrod;
+    font-weight: bold;
+}
+.card:last-child h1{
+    color: #174072;
+    font-weight: bold;
+}
+.card:last-child p{
+    color: #174072;
+    font-weight: bold;
+}
+
+.news{
+    text-align: center;
+    background-color: #1740721a;
+    box-sizing: border-box;
+    padding: 2rem 6rem;
+
+}
+form{
+    /* background-color: #a2bafa; */
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: ;
+    grid-column-gap: 1rem;
+}
+
+
+.footer{
+    background-color: goldenrod;
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-gap: 4rem;
+}
+.footer a:hover::before{
+    width: 40%;
+    left: 0%;
+}
+#footer-div{
+    /* background-color: #a2bafa; */
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer-2{
+    background-color: #174072;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    /* top: 4rem; */
+}
